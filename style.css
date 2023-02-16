@@ -1,0 +1,47 @@
+:root {
+  --atsBlue: #2f2e41;
+  --atsFillColor: #2f2e41;
+  --atsGreen: #2f2e41;
+  --atsLightBlue: #2f2e41;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Ubuntu";
+  transition: 0.5s;
+  width: 100%;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/assets/fonts/Ubuntu-Regular.ttf");
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.menu {
+  list-style: none;
+}
+.menu li {
+  display: inline;
+  margin: 1rem;
+}
+.menu li a {
+  text-decoration: none;
+  color: #2f2e41;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  
+}
+section {
+  height: 100vh;
+}
