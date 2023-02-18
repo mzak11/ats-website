@@ -6,22 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Station</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="myscripts.js"></script>
+
   </head>
   <body>
     <header>
-      <nav >
-        <img class="logo" src="/img/ats-icon.jpeg" alt="company logo" />
-        <ul class="menu">
-          <li><a href="#dashboard">Dashboard</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#aboutus">About Us</a></li>
-        </ul>
-      </nav>
+      <div class="navbar-container">
+        <nav>
+          <img class="logo" src="/img/ats-icon.jpeg" alt="company logo" />
+          <ul class="menu">
+            <li class="nav-link active-link">
+              <a href="#dashboard" >Home</a>
+              <div class="underline"></div>
+            </li>
+            <li class="nav-link">
+              <a href="#products">Products</a>
+              <div class="underline"></div>
+            </li>
+            <li class="nav-link">
+              <a href="#pricing">Pricing</a>
+              <div class="underline"></div>
+            </li>
+            <li class="nav-link">
+              <a href="#aboutus">About Us</a>
+              <div class="underline"></div>
+            </li>
+
+            <a href="#signup"><button class="btn_signup1">Sign up</button></a>
+            <hr class="vertical-line">
+            <a href="#get"><button class="btn_signup2">Get Demo</button></a>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <section id="dashboard"><h1>dashboard</h1></section>
+    <section id="dashboard">
+      <div class="grid-container hero-container">
+        <div class="left-container">
+          <h1 class="hero-title">The World's Best Free <br> Applicant Tracking system <br>& Recruitment Software</h1>
+          <p class="hero-desc">Manage applicants, post to job boards, schedule & <br> conduct interviews and hire top talent - One tool to do it all.</p>
+          <div class="hero-btn-container grid-container">
+           <a href="#"><button class="btn_signup1">Sign up for FREE</button></a> 
+           <a href="#"><button class="btn_signup2">Get Demo</button></a>
+
+          </div>
+        </div>
+        <div>kkkkk</div>
+      </div>
+    </section>
     <section id="products"><h1>dashboard</h1></section>
     <section id="pricing"><h1>dashboard</h1></section>
     <section id="aboutus"><h1>dashboard</h1></section>
+    
+   
   </body>
 </html>

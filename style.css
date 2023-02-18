@@ -1,11 +1,12 @@
 :root {
   --atsBlue: #2f2e41;
-  --atsFillColor: #2f2e41;
-  --atsGreen: #2f2e41;
-  --atsLightBlue: #2f2e41;
+  --atsFillColor: #eee;
+  --atsGreen: "#92D050";
+  --atsLightBlue: "#5D6D7E";
+  --borderColor: "#6c6c6c";
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -20,14 +21,35 @@ body {
   font-family: "Ubuntu";
   src: url("/assets/fonts/Ubuntu-Regular.ttf");
 }
+/* conatainers */
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+}
+
+/* navbar styling */
+header {
+  position: sticky;
+  top: 0;
+
+  box-shadow: 0px 1px 10px #999;
+  z-index: 99;
+  background-color: #fff;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem 1rem 2rem;
+  align-items: center;
+  padding: 0 2rem;
 }
 
 .menu {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 .menu li {
   display: inline;
@@ -35,13 +57,130 @@ nav {
 }
 .menu li a {
   text-decoration: none;
-  color: #2f2e41;
+  color: #18122b;
 }
 .logo {
-  width: 70px;
-  height: 70px;
-  
+  width: 50px;
+  height: 50px;
 }
 section {
   height: 100vh;
+  text-align: center;
+  color: var(--atsBlue);
+}
+
+.navbar-container ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+
+  align-items: center;
+}
+
+.navbar-container ul li {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.navbar-container ul li a {
+  color: var(--atsBlue);
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  transition: color 0.5s;
+}
+
+.navbar-container ul li .underline {
+  height: 3px;
+  background-color: transparent;
+  width: 0%;
+  transition: width 0.2s, background-color 0.5s;
+  margin: 0 auto;
+}
+
+.navbar-container ul li.active-link .underline {
+  width: 100%;
+  background-color: var(--atsBlue);
+}
+
+.navbar-container ul li:hover .underline {
+  background-color: #92d050;
+  width: 100%;
+}
+
+.navbar-container ul li:hover a {
+  color: #92d050;
+}
+
+.navbar-container ul li:active a {
+  transition: none;
+  color: black(255, 255, 255, 0.76);
+}
+
+.navbar-container ul li:active .underline {
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.76);
+}
+.btn_signup1 {
+  width: 8rem;
+  font-size: 0.9rem;
+  height: 2.5rem;
+  background-color: var(--atsBlue);
+  border: none;
+  border-radius: 0.2em;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.btn_signup2 {
+  width: 8rem;
+  height: 2.5rem;
+  border: 2px solid var(--atsBlue);
+  font-size: 0.9rem;
+  background-color: white;
+  border-radius: 0.2em;
+  color: var(--atsBlue);
+  transition: 0.2s ease-in-out;
+}
+.btn_signup1:hover {
+  cursor: pointer;
+  background-color: #92d050;
+  color: #eee;
+}
+.btn_signup2:hover {
+  background-color: #92d050;
+  color: #eee;
+  cursor: pointer;
+  border: 2px solid #92d050;
+}
+
+.vertical-line {
+  transform: rotate(90deg);
+  background: rgb(173, 173, 173);
+  height: 1px;
+  width: 40px;
+  border: none;
+}
+/* hero section */
+.hero-container {
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem;
+}
+.hero-btn-container{
+  grid-template-columns: 8rem 8rem ;
+  grid-gap: 1rem;
+  justify-content: left;
+}
+
+.left-container {
+  text-align: left;
+}
+.hero-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 50px;
+}
+.hero-desc {
+  color: #677294;
+  line-height: 25px;
 }
