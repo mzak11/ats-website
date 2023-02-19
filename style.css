@@ -166,8 +166,8 @@ section {
   grid-template-columns: 1fr 1fr;
   margin: 2rem;
 }
-.hero-btn-container{
-  grid-template-columns: 8rem 8rem ;
+.hero-btn-container {
+  grid-template-columns: 8rem 8rem;
   grid-gap: 1rem;
   justify-content: left;
 }
@@ -177,10 +177,157 @@ section {
 }
 .hero-title {
   font-weight: 600;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 40px;
+  line-height: 60px;
+  word-spacing: 9px;
 }
 .hero-desc {
   color: #677294;
   line-height: 25px;
+}
+.right-container .hero-banner {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+}
+/* section pricing */
+
+.pricing-hero-heading {
+  margin: 0;
+  margin-bottom: 16px;
+  color: var(--atsBlue);
+  font-size: 60px;
+  line-height: 106%;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+}
+.pricing-hero-text {
+  font-size: 18px;
+  line-height: 160%;
+}
+.pricing-hero-text a {
+  color: #92d050;
+}
+.pricing-hero-text a:hover {
+  color: var(--atsBlue);
+}
+.pricing-switch-text {
+  word-spacing: 8px;
+  font-size: 20px;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--atsBlue);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--atsBlue);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--atsBlue);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.pricing-table-item{
+    display: block;
+    overflow: hidden;
+    background-color: #F1F3F6;
+    padding: 32px 26px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.pricing-table-plan-text1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--atsBlue);
+  font-size: 18px;
+  line-height: 144%;
+  font-weight: 700;
+}
+.pricing-table-plan-text2 {
+  color: #677294;
+}
+.pricing-cost-text-span {
+  margin-right: 4px;
+  font-family: Montserrat, sans-serif;
+  color: #0d0e10;
+  font-size: 36px;
+  line-height: 112%;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.pricing-table-button1 {
+  width: 13rem;
+  font-size: 0.9rem;
+  height: 2.5rem;
+  background-color: var(--atsBlue);
+  border: none;
+  border-radius: 0.2em;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.pricing-table-container{
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+  }
+.pricing-table-left{
+  justify-content: center;
+  background-color: #F1F3F6;
+  border-radius:0.8em;
+}
+.pricing-table-right{
+  justify-content: center;
+  background-color: #F1F3F6;
+  border-radius:0.8em;
+  margin-left: 2px;
 }
