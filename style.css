@@ -64,7 +64,7 @@ nav {
   height: 50px;
 }
 section {
-  height: 100vh;
+  height: 150vh;
   text-align: center;
   color: var(--atsBlue);
 }
@@ -196,10 +196,11 @@ section {
   margin: 0;
   margin-bottom: 16px;
   color: var(--atsBlue);
-  font-size: 60px;
+  font-size: 50px;
   line-height: 106%;
   font-weight: 700;
   letter-spacing: -1.2px;
+  word-spacing: 6gopx;
 }
 .pricing-hero-text {
   font-size: 18px;
@@ -213,7 +214,7 @@ section {
 }
 .pricing-switch-text {
   word-spacing: 8px;
-  font-size: 20px;
+  font-size: 18px;
 }
 /* The switch - the box around the slider */
 .switch {
@@ -290,7 +291,7 @@ input:checked + .slider:before {
   margin-top: 0;
   margin-bottom: 8px;
   color: var(--atsBlue);
-  font-size: 18px;
+  font-size: 22px;
   line-height: 144%;
   font-weight: 700;
 }
@@ -328,10 +329,17 @@ input:checked + .slider:before {
   justify-content: center;
   background-color: #F1F3F6;
   border-radius:0.8em;
+  padding: 1px 125px;
+  text-align: left;
 }
 .pricing-table-right{
   justify-content: center;
   background-color: #F1F3F6;
   border-radius:0.8em;
   margin-left: 2px;
+  padding: 1px 125px;
+  text-align: left;
+}
+.horizontal-line{
+  max-width: 100%;
 }
