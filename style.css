@@ -16,6 +16,103 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+/*footer*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+footer .footer-container{
+  background-color: var(--atsBlue);
+
+}
+.footer-row{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+}
+.footer-col ul{
+  list-style: none;
+}
+.footer-col h4{
+  color: #eee;
+  margin-bottom: 25px;
+  font-size: 22px;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  background-color: #92d050;
+  bottom: -10px;
+}
+.footer-col ul li{
+  padding: 10px 0;
+}
+.footer-col ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+
+  transition: 0.5s;
+} 
+.footer-col ul li a:hover{
+opacity: 1;
+}
+.footer-col form input{
+  border: none;
+  width: 250px;
+  height: 45px;
+  display: block;
+  padding-left: 20px;
+  margin: 14px 0;
+} 
+.footer-col .input-submit{
+  padding: 0px 20px;
+  background-color:#92d050;
+  border: none;
+  color: var(--atsBlue);
+}
+.col p{
+  color: white;
+}
+.footer-row hr{
+  opacity: 0.7;
+}
+.footer-row .social-Icons i{
+  display:inline-block;
+  color:#92d050;
+  font-size: 20px;
+  margin: 0 15px;
+  transition: 0.5s;
+}
+.footer-row .social-Icons i:hover{
+  color:white;
+}
+ .footer-logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+@media (max-width:600px) {
+  footer .footer-row{
+    flex-direction: column;
+    padding: 20px 30px;
+  }
+  footer .footer-col ul{
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-col input{
+    width: 100%;
+  }
 }
 @font-face {
   font-family: "Ubuntu";
@@ -167,6 +264,7 @@ nav {
 .hero-container {
   grid-template-columns: 1fr 1fr;
 }
+
 .hero-btn-container {
   grid-template-columns: 8rem 8rem;
   grid-gap: 1rem;
@@ -176,6 +274,8 @@ nav {
 .left-container {
   text-align: left;
 }
+
+
 .hero-title {
   font-weight: 600;
   font-size: 40px;
@@ -236,7 +336,6 @@ nav {
   margin-bottom: 8px;
   color: var(--atsBlue);
   font-size: 22px;
-
   font-weight: 700;
 }
 .pricing-card-text {
@@ -256,7 +355,6 @@ nav {
 .pricing-cost-text-span {
   color: #0d0e10;
   font-size: 36px;
-
   font-weight: 700;
   letter-spacing: -1px;
 }
