@@ -1,88 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Station</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="./index.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <div class="navbar-container">
-        <nav>
-          <img class="logo" src="/img/ats-icon.jpeg" alt="company logo" />
-          <ul class="menu">
-            <li class="nav-link active-link">
-              <a href="#dashboard">Home</a>
-              <div class="underline"></div>
-            </li>
-            <li class="nav-link">
-              <a href="#products">Products</a>
-              <div class="underline"></div>
-            </li>
-            <li class="nav-link">
-              <a href="#pricing">Pricing</a>
-              <div class="underline"></div>
-            </li>
-            <li class="nav-link">
-              <a href="#aboutus">About Us</a>
-              <div class="underline"></div>
-            </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Station</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./index.js"></script>
+</head>
 
-            <a href="#signup"><button class="btn_signup1">Sign up</button></a>
-            <hr class="vertical-line" />
-            <a href="#get"><button class="btn_signup2">Get Demo</button></a>
+<body>
+  <header>
+    <div class="navbar-container">
+      <nav>
+        <img class="logo" src="/img/ats-icon.jpeg" alt="company logo" />
+        <ul class="menu">
+          <li class="nav-link active-link">
+            <a href="#dashboard">Home</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-link">
+            <a href="#products">Products</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-link">
+            <a href="#pricing">Pricing</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-link">
+            <a href="#aboutus">About Us</a>
+            <div class="underline"></div>
+          </li>
+
+          <a href="#signup"><button class="btn_signup1">Sign up</button></a>
+          <hr class="vertical-line" />
+          <a href="#get"><button class="btn_signup2">Get Demo</button></a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="dashboard">
+    <div class="grid-container hero-container">
+      <div class="left-container">
+        <h1 class="hero-title">
+          The World's Best <br />
+          Applicant Tracking system <br />& Recruitment Software
+        </h1>
+        <p class="hero-desc">
+          Manage applicants, post to job boards, schedule & <br />
+          conduct interviews and hire top talent - One tool to do it all.
+        </p>
+
+        <div class="hero-btn-container grid-container">
+          <a href="#"><button class="btn_signup1">Sign up for Free</button></a>
+          <a href="#"><button class="btn_signup2">Get Demo</button></a>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <img class="hero-banner" src="/img/ats1.png" alt="hero-banner" />
+      </div>
+    </div>
+  </section>
+
+  <!-- section products-->
+
+  <section id="products">
+    <div class="grid-container feature-container">
+      <div><img width="300px" src="./img/ats-icon.jpeg" alt="" /></div>
+      <div class="feature-content">
+        <h2>Enhance Resume Screening</h2>
+        <ul>
+          <li>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
+            molestiae.
+          </li>
+          <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Pariatur, aliquam!
+          </li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="feature-container">
+      <div class="grid-container feature-container">
+        <div class="feature-content">
+          <h2>Enhance Resume Screening</h2>
+          <ul>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aliquid, molestiae.
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Pariatur, aliquam!
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <section id="dashboard">
-      <div class="grid-container hero-container">
-        <div class="left-container">
-          <h1 class="hero-title">
-            The World's Best Free <br />
-            Applicant Tracking system <br />& Recruitment Software
-          </h1>
-          <p class="hero-desc">
-            Manage applicants, post to job boards, schedule & <br />
-            conduct interviews and hire top talent - One tool to do it all.
-          </p>
-
-          <div class="hero-btn-container grid-container">
-            <a href="#"
-              ><button class="btn_signup1">Sign up for Free</button></a
-            >
-            <a href="#"><button class="btn_signup2">Get Demo</button></a>
-          </div>
         </div>
-
-        <div class="right-container">
-          <img class="hero-banner" src="/img/ats1.png" alt="hero-banner" />
-        </div>
+        <div><img width="300px" src="./img/ats-icon.jpeg" alt="" /></div>
       </div>
-    </section>
-
-    <!-- section products-->
-
-    <section id="products">
+    </div>
+    <div class="feature-container">
       <div class="grid-container feature-container">
         <div><img width="300px" src="./img/ats-icon.jpeg" alt="" /></div>
         <div class="feature-content">
           <h2>Enhance Resume Screening</h2>
           <ul>
             <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
-              molestiae.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aliquid, molestiae.
             </li>
             <li>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -94,262 +130,194 @@
           </ul>
         </div>
       </div>
-      <div class="feature-container">
-        <div class="grid-container feature-container">
-          <div class="feature-content">
-            <h2>Enhance Resume Screening</h2>
-            <ul>
-              <li>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aliquid, molestiae.
-              </li>
-              <li>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Pariatur, aliquam!
-              </li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-            </ul>
-          </div>
-          <div><img width="300px" src="./img/ats-icon.jpeg" alt="" /></div>
-        </div>
-      </div>
-      <div class="feature-container">
-        <div class="grid-container feature-container">
-          <div><img width="300px" src="./img/ats-icon.jpeg" alt="" /></div>
-          <div class="feature-content">
-            <h2>Enhance Resume Screening</h2>
-            <ul>
-              <li>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aliquid, molestiae.
-              </li>
-              <li>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Pariatur, aliquam!
-              </li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- section pricing -->
-    <section id="pricing">
-      <div class="pricing-container">
-        <h1 class="pricing-hero-heading">
-          Get started at no cost, then pay as you go.
-        </h1>
-        <p class="small-pricing-heading">Simple and Transparent Pricing</p>
-      </div>
+  <!-- section pricing -->
+  <section id="pricing">
+    <div class="pricing-container">
+      <h1 class="pricing-hero-heading">
+        Get started at no cost, then pay as you go.
+      </h1>
+      <p class="small-pricing-heading">Simple and Transparent Pricing</p>
+    </div>
 
-      <!-- pricing plans -->
-      <div class="grid-container pricing-table-container">
-        <div class="pricing-card">
-          <h5 class="pricing-table-plan-text1">Professional Plan</h5>
-          <div class="pricing-card-text">
-            For Individuals and Small <br />
-            Teams
-          </div>
-
-          <div class="pricing-cost">
-            <span class="pricing-cost-text-span">$19</span>
-            <p class="light-text">/per month</p>
-          </div>
-
-          <a href="#"
-            ><button class="pricing-table-button1">
-              Start 14-day free trial
-            </button></a
-          >
-          <div class="flex-container mt-1">
-            <table>
-              <tr>
-                <td>
-                  <img
-                    src="/img/627cdcca8bc0d2138eb26761_Group 11.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <p class="plan-features">Up to 15 Jobs per Account</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="/img/627cdcca8bc0d2138eb26761_Group 11.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <p class="plan-features">Up to 10,000 Candidates</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="/img/627cdcca8bc0d2138eb26761_Group 11.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <p class="plan-features">Unlimited Hiring Managers</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="/img/627cdcca8bc0d2138eb26761_Group 11.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <p class="plan-features">Up to 15 Jobs per Account</p>
-                </td>
-              </tr>
-            </table>
-          </div>
+    <!-- pricing plans -->
+    <div class="grid-container pricing-table-container">
+      <div class="pricing-card">
+        <h5 class="pricing-table-plan-text1">Professional Plan</h5>
+        <div class="pricing-card-text">
+          For Individuals and Small <br />
+          Teams
         </div>
 
-        <div class="pricing-card">
-          <h5 class="pricing-table-plan-text1">Enterprise Plan</h5>
-          <p class="pricing-card-text">
-            For Industry Leaders <br />
-            Teams
-          </p>
+        <div class="pricing-cost">
+          <span class="pricing-cost-text-span">$19</span>
+          <p class="light-text">/per month</p>
+        </div>
 
-          <div class="pricing-cost">
-            <span class="pricing-cost-text-span">$35</span>
-            <p class="light-text">/per month</p>
-          </div>
-
-          <a href="#"
-            ><button class="pricing-table-button1">
-              Start 14-day Free Trial
-            </button></a
-          >
-          <div class="flex-container mt-1">
-            <table>
-              <tr>
-                <td>
-                  <img
-                    src="/img/627cdcca8bc0d2138eb26761_Group 11.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <p class="plan-features">Unlimited Jobs</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="/img/627cdcca8bc0d2138eb26761_Group 11.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <p class="plan-features">Unlimited Candidates</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="/img/627cdcca8bc0d2138eb26761_Group 11.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <p class="plan-features">Unlimited Hiring Managers</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="/img/627cdcca8bc0d2138eb26761_Group 11.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <p class="plan-features">Plus the Features below</p>
-                </td>
-              </tr>
-            </table>
-          </div>
+        <a href="#"><button class="pricing-table-button1">
+            Start 14-day free trial
+          </button></a>
+        <div class="flex-container mt-1">
+          <table>
+            <tr>
+              <td>
+                <img src="/img/627cdcca8bc0d2138eb26761_Group 11.svg" alt="" />
+              </td>
+              <td>
+                <p class="plan-features">Up to 15 Jobs per Account</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/627cdcca8bc0d2138eb26761_Group 11.svg" alt="" />
+              </td>
+              <td>
+                <p class="plan-features">Up to 10,000 Candidates</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/627cdcca8bc0d2138eb26761_Group 11.svg" alt="" />
+              </td>
+              <td>
+                <p class="plan-features">Unlimited Hiring Managers</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/627cdcca8bc0d2138eb26761_Group 11.svg" alt="" />
+              </td>
+              <td>
+                <p class="plan-features">Up to 15 Jobs per Account</p>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
-      <!-- <div class="pricing-hero-text">
+
+      <div class="pricing-card">
+        <h5 class="pricing-table-plan-text1">Enterprise Plan</h5>
+        <p class="pricing-card-text">
+          For Industry Leaders <br />
+          Teams
+        </p>
+
+        <div class="pricing-cost">
+          <span class="pricing-cost-text-span">$35</span>
+          <p class="light-text">/per month</p>
+        </div>
+
+        <a href="#"><button class="pricing-table-button1">
+            Start 14-day Free Trial
+          </button></a>
+        <div class="flex-container mt-1">
+          <table>
+            <tr>
+              <td>
+                <img src="/img/627cdcca8bc0d2138eb26761_Group 11.svg" alt="" />
+              </td>
+              <td>
+                <p class="plan-features">Unlimited Jobs</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/627cdcca8bc0d2138eb26761_Group 11.svg" alt="" />
+              </td>
+              <td>
+                <p class="plan-features">Unlimited Candidates</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/627cdcca8bc0d2138eb26761_Group 11.svg" alt="" />
+              </td>
+              <td>
+                <p class="plan-features">Unlimited Hiring Managers</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/627cdcca8bc0d2138eb26761_Group 11.svg" alt="" />
+              </td>
+              <td>
+                <p class="plan-features">Plus the Features below</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="pricing-hero-text">
       Got a question about our pricing?<br />
       <a href="#">Contact us</a> or start a chat now.
     </div> -->
-    </section>
-    <section id="aboutus">
-      <div class="aboutus-container">
-        <h1>About Us</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus nesciunt illum consectetur ex minus, adipisci eaque
-          nobis laborum autem eligendi beatae voluptatum nostrum! Corporis
-          quibusdam, excepturi quas rem alias cumque ducimus maxime! Omnis
-          ratione dolorum aspernatur modi perferendis iste earum. Illum corporis
-          nisi asperiores minima? Sunt beatae minima ipsum magnam.
-        </p>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-row">
-          <div class="footer-col">
-            <h4>logo</h4>
-            <ul>
-              <li><a href="">tutorial</a></li>
-              <li><a href="">tutorial</a></li>
-              <li><a href="">tutorial</a></li>
-              <li><a href="">tutorial</a></li>
-            </ul>
-          </div>
+  </section>
+  <section id="aboutus">
+    <div class="aboutus-container">
+      <h1>About Us</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus nesciunt illum consectetur ex minus, adipisci eaque
+        nobis laborum autem eligendi beatae voluptatum nostrum! Corporis
+        quibusdam, excepturi quas rem alias cumque ducimus maxime! Omnis
+        ratione dolorum aspernatur modi perferendis iste earum. Illum corporis
+        nisi asperiores minima? Sunt beatae minima ipsum magnam.
+      </p>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>logo</h4>
+          <ul>
+            <li><a href="">tutorial</a></li>
+            <li><a href="">tutorial</a></li>
+            <li><a href="">tutorial</a></li>
+            <li><a href="">tutorial</a></li>
+          </ul>
+        </div>
 
-          <!--third-col-->
-          <div class="footer-col">
-            <h4>TEXT</h4>
-            <ul>
-              <li><a href="">tutorial</a></li>
-              <li><a href="">tutorial</a></li>
-              <li><a href="">tutorial</a></li>
-              <li><a href="">tutorial</a></li>
-            </ul>
-          </div>
-          <!--fourth-col-->
-          <div class="footer-col">
-            <h4>Contact Us</h4>
-            <form action="">
-              <input type="text" placeholder=" Email " class="input-name" />
-              <input type="text" placeholder=" Message " class="input-name" />
-              <input type="submit" value="Submit" class="input-submit" />
-            </form>
-          </div>
+        <!--third-col-->
+        <div class="footer-col">
+          <h4>TEXT</h4>
+          <ul>
+            <li><a href="">tutorial</a></li>
+            <li><a href="">tutorial</a></li>
+            <li><a href="">tutorial</a></li>
+            <li><a href="">tutorial</a></li>
+          </ul>
         </div>
-        <hr />
-        <div class="footer-row rowicons">
-          <div class="col">
-            <p>
-              &#169; 2023 ATS-Hire | All Rights Reserved| Privacy Policy|
-              Terms&Condition
-            </p>
-          </div>
-          <div class="social-Icons">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-          </div>
+        <!--fourth-col-->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <form action="">
+            <input type="text" placeholder=" Email " class="input-name" />
+            <input type="text" placeholder=" Message " class="input-name" />
+            <input type="submit" value="Submit" class="input-submit" />
+          </form>
         </div>
       </div>
-    </footer>
-  </body>
+      <hr />
+      <div class="footer-row rowicons">
+        <div class="col">
+          <p>
+            &#169; 2023 ATS-Hire | All Rights Reserved| Privacy Policy|
+            Terms&Condition
+          </p>
+        </div>
+        <div class="social-Icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
